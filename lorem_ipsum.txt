@@ -1,0 +1,2 @@
+to appendVietnam VO DICH
+ demo string

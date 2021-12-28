@@ -1,0 +1,1 @@
+/Users/admin/Desktop/Rust/hello/target/debug/hello: /Users/admin/Desktop/Rust/hello/src/file_demo.rs /Users/admin/Desktop/Rust/hello/src/hashmap_demo.rs /Users/admin/Desktop/Rust/hello/src/main.rs /Users/admin/Desktop/Rust/hello/src/model.rs /Users/admin/Desktop/Rust/hello/src/traits_demo.rs
