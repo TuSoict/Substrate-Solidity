@@ -1,0 +1,13 @@
+/home/anhminh/Rust/rust_present/target/rls/debug/deps/tracing-81bbc3fb62490d49.rmeta: /home/anhminh/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/lib.rs /home/anhminh/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/macros.rs /home/anhminh/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/dispatcher.rs /home/anhminh/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/field.rs /home/anhminh/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/instrument.rs /home/anhminh/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/level_filters.rs /home/anhminh/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/span.rs /home/anhminh/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/stdlib.rs /home/anhminh/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/subscriber.rs
+
+/home/anhminh/Rust/rust_present/target/rls/debug/deps/tracing-81bbc3fb62490d49.d: /home/anhminh/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/lib.rs /home/anhminh/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/macros.rs /home/anhminh/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/dispatcher.rs /home/anhminh/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/field.rs /home/anhminh/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/instrument.rs /home/anhminh/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/level_filters.rs /home/anhminh/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/span.rs /home/anhminh/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/stdlib.rs /home/anhminh/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/subscriber.rs
+
+/home/anhminh/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/lib.rs:
+/home/anhminh/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/macros.rs:
+/home/anhminh/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/dispatcher.rs:
+/home/anhminh/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/field.rs:
+/home/anhminh/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/instrument.rs:
+/home/anhminh/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/level_filters.rs:
+/home/anhminh/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/span.rs:
+/home/anhminh/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/stdlib.rs:
+/home/anhminh/.cargo/registry/src/github.com-1ecc6299db9ec823/tracing-0.1.29/src/subscriber.rs:
