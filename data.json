@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Tran Hieu",
+        "age": 18,
+        "address": "Thai Binh"
+    },
+    {
+        "name": "Van Binh",
+        "age": 21,
+        "address": "Ha Nam"
+    },
+    {
+        "name": "Nguyen Hoang",
+        "age": 34,
+        "address": "Binh Duong"
+    },
+    {
+        "name": "Hoang Minh",
+        "age": 28,
+        "address": "Ha Noi"
+    }
+]
