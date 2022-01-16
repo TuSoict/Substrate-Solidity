@@ -1,1 +1,0 @@
-/home/anhminh/Rust/rust_present/target/debug/rust_present: /home/anhminh/Rust/rust_present/src/http_request.rs /home/anhminh/Rust/rust_present/src/main.rs /home/anhminh/Rust/rust_present/src/option_enum.rs /home/anhminh/Rust/rust_present/src/regular_expression.rs /home/anhminh/Rust/rust_present/src/reqwest.rs
