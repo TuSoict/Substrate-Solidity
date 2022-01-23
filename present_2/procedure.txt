@@ -1,0 +1,13 @@
+- Đầu tiên khi vào, có 2 lựa chọn: Login, Register
+
+- Login 
+    + 2 lựa chọn: Nhập tài khoản, Thoát
+    + Nhập đúng tài khoản -> Yêu cầu nhập mật khẩu hoặc Quay về Login, Register
+        *) Nhập đúng mật khẩu -> Xin chào tên tài khoản, đi vào giao diện tiếp theo    
+        *) Nhập sai -> Nhập lại đến khi đúng mới thôi, hoặc quit
+    + Nhập sai tài khoản -> Nhập lại hoặc quit 
+
+- Register:
+    + 2 lựa chọn: Nhập tài khoản bạn muốn đăng ký, quit(Trả về giao diện trước đó)
+    + Nếu tài khoản bị trùng thì trả về bị trùng, quay lại ý trên 
+    + Nếu tài khoản không bị trùng, tạo password, in password ra màn hình, quay lại giao diện login, Register
