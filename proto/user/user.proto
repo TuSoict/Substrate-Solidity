@@ -1,0 +1,74 @@
+syntax = "proto3";
+
+// import "google/protobuf/timestamp.proto";
+
+package user;
+
+service UserService {
+  rpc Login(LoginRequest) returns (LoginResponse) {}
+  rpc GetUser (UserRequest) returns (UserReply) {}
+  rpc ListUsers(EmptyBodyRequest) returns (Users) {}
+  rpc CreateUser (CreateUserRequest) returns (CreateUserReply) {}
+  rpc UpdateUser (UpdateUserRequest) returns (UpdateUserReply) {}
+  rpc DeleteUser (UserRequest) returns (DeleteUserReply) {}
+  rpc DeleteUsers (EmptyBodyRequest) returns (DeleteUserReply) {}
+}
+
+message LoginRequest {
+    string phone_number = 1;
+    string password = 2;
+}   
+
+message LoginResponse {
+	bool ok = 1;
+}
+
+message EmptyBodyRequest {}
+
+message UserRequest {
+    string id = 1;
+    string phone_number = 2;
+}
+
+message UserReply {
+    string id = 1; 
+    string phone_number = 2;
+    string first_name = 3;
+    string last_name = 4;
+    string date_of_birth = 5;
+    string password = 6;
+}
+
+message CreateUserRequest {
+    string phone_number = 1;
+    string first_name = 2;
+    string last_name = 3;
+    string date_of_birth = 4;
+    string password = 5;
+}
+
+message CreateUserReply {
+    string message = 1;
+}
+
+message UpdateUserRequest {
+    string id = 1;
+    string phone_number = 2;
+    string first_name = 3;
+    string last_name = 4;
+    string date_of_birth = 5;
+}
+
+message UpdateUserReply {
+    string message = 1;
+}
+
+message DeleteUserReply {
+    string message = 1;
+}
+
+message Users {
+    repeated UserReply users = 1;
+}
+
+

@@ -1,0 +1,8 @@
+version: "3.2"
+services:
+  postgresql:
+    image: postgresql
+    ports:
+      - 5432: 5432
+  cargo_app:
+      
