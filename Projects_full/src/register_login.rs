@@ -94,6 +94,8 @@ pub fn check_login(accounts: &mut Accounts){
         }
         else {
             println!("tài khoản không chính xác hãy thử lại");
+            check_login(accounts);
+            break;
         }
     }
 }
