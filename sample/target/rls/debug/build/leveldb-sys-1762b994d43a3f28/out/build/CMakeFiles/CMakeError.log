@@ -1,0 +1,71 @@
+Determining if the function crc32c_value exists in the crc32c failed with the following output:
+Change Dir: /Users/tutmt/rust/sample/target/rls/debug/build/leveldb-sys-1762b994d43a3f28/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_d8fbf/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_d8fbf.dir/build.make CMakeFiles/cmTC_d8fbf.dir/build
+Building C object CMakeFiles/cmTC_d8fbf.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -I/Users/tutmt/rust/sample/target/rls/debug/build/leveldb-sys-1762b994d43a3f28/out/include -ffunction-sections -fdata-sections -fPIC -arch arm64 -DCHECK_FUNCTION_EXISTS=crc32c_value -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -std=c11 -MD -MT CMakeFiles/cmTC_d8fbf.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_d8fbf.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_d8fbf.dir/CheckFunctionExists.c.o -c /opt/homebrew/Cellar/cmake/3.22.1/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d8fbf
+/opt/homebrew/Cellar/cmake/3.22.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8fbf.dir/link.txt --verbose=1
+/usr/bin/cc  -I/Users/tutmt/rust/sample/target/rls/debug/build/leveldb-sys-1762b994d43a3f28/out/include -ffunction-sections -fdata-sections -fPIC -arch arm64 -DCHECK_FUNCTION_EXISTS=crc32c_value -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/Users/tutmt/rust/sample/target/rls/debug/build/leveldb-sys-1762b994d43a3f28/out/lib  CMakeFiles/cmTC_d8fbf.dir/CheckFunctionExists.c.o -o cmTC_d8fbf  -lcrc32c 
+ld: library not found for -lcrc32c
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_d8fbf] Error 1
+make: *** [cmTC_d8fbf/fast] Error 2
+
+
+
+Determining if the function malloc exists in the tcmalloc failed with the following output:
+Change Dir: /Users/tutmt/rust/sample/target/rls/debug/build/leveldb-sys-1762b994d43a3f28/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b8b6f/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_b8b6f.dir/build.make CMakeFiles/cmTC_b8b6f.dir/build
+Building C object CMakeFiles/cmTC_b8b6f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -I/Users/tutmt/rust/sample/target/rls/debug/build/leveldb-sys-1762b994d43a3f28/out/include -ffunction-sections -fdata-sections -fPIC -arch arm64 -DCHECK_FUNCTION_EXISTS=malloc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -std=c11 -MD -MT CMakeFiles/cmTC_b8b6f.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_b8b6f.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_b8b6f.dir/CheckFunctionExists.c.o -c /opt/homebrew/Cellar/cmake/3.22.1/share/cmake/Modules/CheckFunctionExists.c
+/opt/homebrew/Cellar/cmake/3.22.1/share/cmake/Modules/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'malloc' [-Wincompatible-library-redeclaration]
+  CHECK_FUNCTION_EXISTS(void);
+  ^
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS malloc
+                              ^
+/opt/homebrew/Cellar/cmake/3.22.1/share/cmake/Modules/CheckFunctionExists.c:7:3: note: 'malloc' is a builtin with type 'void *(unsigned long)'
+<command line>:1:31: note: expanded from here
+#define CHECK_FUNCTION_EXISTS malloc
+                              ^
+1 warning generated.
+Linking C executable cmTC_b8b6f
+/opt/homebrew/Cellar/cmake/3.22.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8b6f.dir/link.txt --verbose=1
+/usr/bin/cc  -I/Users/tutmt/rust/sample/target/rls/debug/build/leveldb-sys-1762b994d43a3f28/out/include -ffunction-sections -fdata-sections -fPIC -arch arm64 -DCHECK_FUNCTION_EXISTS=malloc -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/Users/tutmt/rust/sample/target/rls/debug/build/leveldb-sys-1762b994d43a3f28/out/lib  CMakeFiles/cmTC_b8b6f.dir/CheckFunctionExists.c.o -o cmTC_b8b6f  -ltcmalloc 
+ld: library not found for -ltcmalloc
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_b8b6f] Error 1
+make: *** [cmTC_b8b6f/fast] Error 2
+
+
+
+Determining if the fdatasync exist failed with the following output:
+Change Dir: /Users/tutmt/rust/sample/target/rls/debug/build/leveldb-sys-1762b994d43a3f28/out/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3a23e/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_3a23e.dir/build.make CMakeFiles/cmTC_3a23e.dir/build
+Building CXX object CMakeFiles/cmTC_3a23e.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++   -I/Users/tutmt/rust/sample/target/rls/debug/build/leveldb-sys-1762b994d43a3f28/out/include -ffunction-sections -fdata-sections -fPIC -arch arm64  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -std=c++11 -MD -MT CMakeFiles/cmTC_3a23e.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_3a23e.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_3a23e.dir/CheckSymbolExists.cxx.o -c /Users/tutmt/rust/sample/target/rls/debug/build/leveldb-sys-1762b994d43a3f28/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/Users/tutmt/rust/sample/target/rls/debug/build/leveldb-sys-1762b994d43a3f28/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: use of undeclared identifier 'fdatasync'
+  return ((int*)(&fdatasync))[argc];
+                  ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_3a23e.dir/CheckSymbolExists.cxx.o] Error 1
+make: *** [cmTC_3a23e/fast] Error 2
+
+
+File /Users/tutmt/rust/sample/target/rls/debug/build/leveldb-sys-1762b994d43a3f28/out/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fdatasync
+  return ((int*)(&fdatasync))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}

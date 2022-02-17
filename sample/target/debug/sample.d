@@ -1,0 +1,1 @@
+/Users/tutmt/rust/sample/target/debug/sample: /Users/tutmt/rust/sample/src/main.rs /Users/tutmt/rust/sample/src/manager/file_helper.rs /Users/tutmt/rust/sample/src/manager/mod.rs /Users/tutmt/rust/sample/src/manager/school_manager.rs /Users/tutmt/rust/sample/src/model/mod.rs /Users/tutmt/rust/sample/src/model/student.rs

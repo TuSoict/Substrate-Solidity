@@ -1,0 +1,16 @@
+[package]
+name = "sample"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[build-dependencies]
+cmake = "0.1"
+
+[dependencies]
+serde = { version = "1.0.104", features = ["derive"] }
+serde_json = "1.0.48"
+leveldb = "0.8.5"
+leveldb-sys = "2.0.4"
+rand = "0.8.0"

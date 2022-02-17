@@ -1,4 +1,5 @@
 # Substrate
 Vietnamese Substrate team
 
-// Finish the learning rust
+// Finished the learning rust
+// starting learn substrate
