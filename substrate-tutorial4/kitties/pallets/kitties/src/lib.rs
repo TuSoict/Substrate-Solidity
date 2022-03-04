@@ -1,6 +1,6 @@
 #![cfg_attr(not(feature = "std"), no_std)]
 
-use scale_info::TypeInfo;
+//use scale_info::TypeInfo;
 
 pub use pallet::*;
 
@@ -44,6 +44,8 @@ pub mod pallet {
 
 	#[pallet::pallet]
 	#[pallet::generate_store(pub(super) trait Store)]
+	#[pallet::without_storage_info]
+
 	pub struct Pallet<T>(_);
 
 	/// Configure the pallet by specifying the parameters and types it depends on.
