@@ -1,0 +1,13 @@
+(await box.retrieve()).toString();
+await box.increment();
+const box = await BoxV2.attach('0x5992afbBadB9754EF38C4c6D0F96Ec1D9d11D1eC');
+const BoxV2 = await ethers.getContractFactory('BoxV2');
+(await box.retrieve()).toString();
+const box = await Box.attach('0x5992afbBadB9754EF38C4c6D0F96Ec1D9d11D1eC');
+const Box = await ethers.getContractFactory('Box');
+  console.log(network);
+  const network = await provider.send("eth_chainId");
+  const provider = new ethers.providers.JsonRpcProvider("http://127.0.0.1:8545/");
+(async () => {
+const ethers = require("ethers");
+eth_chainId

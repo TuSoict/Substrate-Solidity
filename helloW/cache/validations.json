@@ -1,0 +1,308 @@
+{
+  "version": "3.4",
+  "log": [
+    {
+      "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol:AggregatorV3Interface": {
+        "src": "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol:4",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "decimals()",
+          "description()",
+          "version()",
+          "getRoundData(uint80)",
+          "latestRoundData()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.2",
+          "flat": false
+        },
+        "solcVersion": "0.8.17"
+      },
+      "contracts/PriceConsumerV3.sol:PriceConsumerV3": {
+        "src": "contracts/PriceConsumerV3.sol:6",
+        "version": {
+          "withMetadata": "54a9e76d3e5d5ea37de037b951e0b0592e83ec80b56dd78013c9d88eae90804e",
+          "withoutMetadata": "b89b5641aef11a75ed5550524a6ba70d3caeca53b7862aa17a24e0a8e8520b69",
+          "linkedWithoutMetadata": "b89b5641aef11a75ed5550524a6ba70d3caeca53b7862aa17a24e0a8e8520b69"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()",
+          "getLatestPrice()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "PriceConsumerV3",
+            "src": "contracts/PriceConsumerV3.sol:14"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "priceFeed",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_contract(AggregatorV3Interface)45",
+              "contract": "PriceConsumerV3",
+              "src": "contracts/PriceConsumerV3.sol:7"
+            }
+          ],
+          "types": {
+            "t_contract(AggregatorV3Interface)45": {
+              "label": "contract AggregatorV3Interface",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.17"
+      }
+    },
+    {
+      "contracts/BoxV2.sol:BoxV2": {
+        "src": "contracts/BoxV2.sol:7",
+        "version": {
+          "withMetadata": "9db39f7ce9a4e48739e6fed3c8132083369a4846fcc8c49993ef13f1885d4b21",
+          "withoutMetadata": "c7e8a23064d1bef43162090cc1af8468c94307ac785f86c85f9204580b223ed2",
+          "linkedWithoutMetadata": "c7e8a23064d1bef43162090cc1af8468c94307ac785f86c85f9204580b223ed2"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()",
+          "increment()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_value",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "BoxV2",
+              "src": "contracts/BoxV2.sol:8"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.17"
+      }
+    },
+    {
+      "contracts/Box.sol:Box": {
+        "src": "contracts/Box.sol:7",
+        "version": {
+          "withMetadata": "6d3707c592ce557836f1bc2ef13fccff7672e8809ee5167445828401351f3bc2",
+          "withoutMetadata": "cba9f8cf52e3c449631a04ea218a6cedcaf7c366669cfc257c89a008266c768f",
+          "linkedWithoutMetadata": "cba9f8cf52e3c449631a04ea218a6cedcaf7c366669cfc257c89a008266c768f"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_value",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts/Box.sol:8"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.17"
+      }
+    },
+    {
+      "contracts/Box.sol:Box": {
+        "src": "contracts/Box.sol:7",
+        "version": {
+          "withMetadata": "f9943a3c97059911a64114c72e18cb43220a24d37a4a23aa20c8586d1860ce0c",
+          "withoutMetadata": "cba9f8cf52e3c449631a04ea218a6cedcaf7c366669cfc257c89a008266c768f",
+          "linkedWithoutMetadata": "cba9f8cf52e3c449631a04ea218a6cedcaf7c366669cfc257c89a008266c768f"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_value",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts/Box.sol:8"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.17"
+      }
+    },
+    {
+      "contracts/Box.sol:Box": {
+        "src": "contracts/Box.sol:7",
+        "version": {
+          "withMetadata": "50cea36fc663144db5ac1140e66b8b477e314350c10da2750f657a1dea4b3a55",
+          "withoutMetadata": "cc0b6fcc084d37c1a65b879c73fb668439797e04742b0964ca7ba7528b59c2bc",
+          "linkedWithoutMetadata": "cc0b6fcc084d37c1a65b879c73fb668439797e04742b0964ca7ba7528b59c2bc"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "storeValue(uint256)",
+          "getValue()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_value",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts/Box.sol:8"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.17"
+      },
+      "contracts/Lock.sol:Lock": {
+        "src": "contracts/Lock.sol:7",
+        "version": {
+          "withMetadata": "ea024133eeb63a837d20453754ee42a6541cfab0cd4ce783fa3bf9b1234dddc1",
+          "withoutMetadata": "705bb975728076d675c1ebc88878e654211ad3d2cee1e7bde4d7e9aae55c29f7",
+          "linkedWithoutMetadata": "705bb975728076d675c1ebc88878e654211ad3d2cee1e7bde4d7e9aae55c29f7"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()",
+          "joinZoom()",
+          "play(uint8)",
+          "reset()",
+          "winnerPlayer()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Lock",
+            "src": "contracts/Lock.sol:17"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Lock",
+              "src": "contracts/Lock.sol:11"
+            },
+            {
+              "label": "gamers",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_array(t_address)dyn_storage",
+              "contract": "Lock",
+              "src": "contracts/Lock.sol:13"
+            },
+            {
+              "label": "points",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_mapping(t_address,t_enum(Gametype)39)",
+              "contract": "Lock",
+              "src": "contracts/Lock.sol:15"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]",
+              "numberOfBytes": "32"
+            },
+            "t_enum(Gametype)39": {
+              "label": "enum Lock.Gametype",
+              "members": [
+                "NONE",
+                "KEO",
+                "BUA",
+                "BAO"
+              ],
+              "numberOfBytes": "1"
+            },
+            "t_mapping(t_address,t_enum(Gametype)39)": {
+              "label": "mapping(address => enum Lock.Gametype)",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.8.17"
+      }
+    }
+  ]
+}
