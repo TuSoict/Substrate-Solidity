@@ -24,5 +24,11 @@ contract Faucet {
         (bool success, ) = msg.sender.call{value: amount}("");
         require(success, "Failed to get faucet");
         emit GetFaucet(amount);
+    } 
+    
+    function withdraw_all_faucet() public {
+        require(owner == msg.sender, "Not owner");
+        (bool success, ) = msg.sender.call{value: address(this).balance}("");
+        require(success, "Failed to withdraw all faucet");
     }
 }
