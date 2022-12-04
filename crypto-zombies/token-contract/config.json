@@ -1,0 +1,10 @@
+{
+  "main": {},
+  "dev": {},
+  "bsctest": {
+    "address": "0x9c191BA2587c49eAAbC8E69d31E45D2bD787f7fF"
+  },
+  "rinkeby": {
+    "address": "0x41De94ecB62A30833a28F74bA31299f62376C789"
+  }
+}
