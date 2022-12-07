@@ -1,0 +1,15 @@
+{
+    "name": "NFT Marketplace Test2",
+    "description": "This is NFT in my Marketplace",
+    "image": "https://gateway.pinata.cloud/ipfs/QmebHnFqnGJRsrwFwcThvPUdt699dtWhhyqTigi9JSfsNa",
+    "attributes":[
+        {
+            "type":"attack",
+            "value":"30"
+        },
+        {
+            "type":"ammor",
+            "value":"10"
+        }
+    ]
+}
