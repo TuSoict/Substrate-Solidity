@@ -290,6 +290,14 @@ impl pallet_nicks::Config for Runtime {
 	type MaxLength = ConstU32<32>;
 }
 
+/// Configure the pallet-loosely-coupling in pallets/loosely-coupling
+impl pallet_loosely_coupling::Config for Runtime {
+	// The ubiquitous event type.
+	type RuntimeEvent = RuntimeEvent;
+	
+	type IncreaseValue = TemplateModule;
+}
+
 // Create the runtime by composing the FRAME pallets that were previously configured.
 construct_runtime!(
 	pub struct Runtime
@@ -309,6 +317,7 @@ construct_runtime!(
 		// Include the custom logic from the pallet-template in the runtime.
 		TemplateModule: pallet_template,
 		NickPallet: pallet_nicks,
+		LooselyCouplingPallet: pallet_loosely_coupling,
 	}
 );
 
