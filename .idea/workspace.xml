@@ -5,47 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9265077-7ce6-4b41-ab0b-e9fae676504f" name="Changes" comment="add node template">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/Cargo.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/Cargo.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/src/main.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/.rustc_info.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/CACHEDIR.TAG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/.cargo-lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/.fingerprint/testing-87095a5982ec6870/bin-testing" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/.fingerprint/testing-87095a5982ec6870/bin-testing.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/.fingerprint/testing-87095a5982ec6870/dep-bin-testing" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/.fingerprint/testing-87095a5982ec6870/invoked.timestamp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/deps/testing-87095a5982ec6870" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/deps/testing-87095a5982ec6870.105cat842oqxzln7.rcgu.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/deps/testing-87095a5982ec6870.2l3dhmps1o4bj9hn.rcgu.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/deps/testing-87095a5982ec6870.382nsplqdp3823o3.rcgu.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/deps/testing-87095a5982ec6870.4a94l59zdszzdgvq.rcgu.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/deps/testing-87095a5982ec6870.4jof0kmogkvg069x.rcgu.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/deps/testing-87095a5982ec6870.4p3p20emf8y1qpyv.rcgu.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/deps/testing-87095a5982ec6870.50aba8bpfowjj0g2.rcgu.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/deps/testing-87095a5982ec6870.5212ug2nihjn0aou.rcgu.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/deps/testing-87095a5982ec6870.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/deps/testing-87095a5982ec6870.sitik08woojlbnk.rcgu.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/deps/testing-87095a5982ec6870.wmb6ktyc0t56vfq.rcgu.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/incremental/testing-3nlfisql5vlbv/s-g5mkhkqvmr-1djvzk8-uhxhdw9myreg/105cat842oqxzln7.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/incremental/testing-3nlfisql5vlbv/s-g5mkhkqvmr-1djvzk8-uhxhdw9myreg/2l3dhmps1o4bj9hn.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/incremental/testing-3nlfisql5vlbv/s-g5mkhkqvmr-1djvzk8-uhxhdw9myreg/382nsplqdp3823o3.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/incremental/testing-3nlfisql5vlbv/s-g5mkhkqvmr-1djvzk8-uhxhdw9myreg/4a94l59zdszzdgvq.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/incremental/testing-3nlfisql5vlbv/s-g5mkhkqvmr-1djvzk8-uhxhdw9myreg/4jof0kmogkvg069x.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/incremental/testing-3nlfisql5vlbv/s-g5mkhkqvmr-1djvzk8-uhxhdw9myreg/4p3p20emf8y1qpyv.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/incremental/testing-3nlfisql5vlbv/s-g5mkhkqvmr-1djvzk8-uhxhdw9myreg/50aba8bpfowjj0g2.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/incremental/testing-3nlfisql5vlbv/s-g5mkhkqvmr-1djvzk8-uhxhdw9myreg/5212ug2nihjn0aou.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/incremental/testing-3nlfisql5vlbv/s-g5mkhkqvmr-1djvzk8-uhxhdw9myreg/dep-graph.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/incremental/testing-3nlfisql5vlbv/s-g5mkhkqvmr-1djvzk8-uhxhdw9myreg/query-cache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/incremental/testing-3nlfisql5vlbv/s-g5mkhkqvmr-1djvzk8-uhxhdw9myreg/sitik08woojlbnk.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/incremental/testing-3nlfisql5vlbv/s-g5mkhkqvmr-1djvzk8-uhxhdw9myreg/wmb6ktyc0t56vfq.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/incremental/testing-3nlfisql5vlbv/s-g5mkhkqvmr-1djvzk8-uhxhdw9myreg/work-products.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/incremental/testing-3nlfisql5vlbv/s-g5mkhkqvmr-1djvzk8.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/testing" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing/target/debug/testing.d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,14 +67,16 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/duonghb53/study/solidity/Substrate-Solidity",
+    "last_opened_file_path": "/Users/duonghb53/study/solidity/Substrate-Solidity/substrate-node-template/pallets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "org.rust.hideNoCargoProjectNotifications/Users/duonghb53/study/solidity/Substrate-Solidity/substrate-node-template/pallets/nicks/Cargo.toml": "true",
     "org.rust.hideNoCargoProjectNotifications/Users/duonghb53/study/solidity/Substrate-Solidity/substrate-node-template/pallets/template/src/benchmarking.rs": "true",
+    "org.rust.hideNoCargoProjectNotifications/Users/duonghb53/study/solidity/Substrate-Solidity/substrate-node-template/pallets/template/src/lib.rs": "true",
     "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
@@ -122,6 +84,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/substrate-node-template/pallets" />
+    </key>
+  </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
   </component>
@@ -133,7 +100,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672932568821</updated>
-      <workItem from="1672932570120" duration="2766000" />
+      <workItem from="1672932570120" duration="5965000" />
     </task>
     <task id="LOCAL-00001" summary="add node template">
       <created>1672935457364</created>
@@ -142,7 +109,28 @@
       <option name="project" value="LOCAL" />
       <updated>1672935457364</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add node template">
+      <created>1672935486072</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672935486072</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add node template">
+      <created>1672935566898</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672935566898</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add node template">
+      <created>1672935705113</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672935705113</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

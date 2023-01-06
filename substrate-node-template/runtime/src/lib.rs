@@ -280,6 +280,16 @@ impl pallet_template::Config for Runtime {
 	type RuntimeEvent = RuntimeEvent;
 }
 
+/// Configure the pallet-nicks in pallets/nicks.
+impl pallet_nicks::Config for Runtime {
+	// The ubiquitous event type.
+	type RuntimeEvent = RuntimeEvent;
+	// Set MinLength of nick name to a desired value.
+	type MinLength = ConstU32<8>;
+	// Set MaxLength of nick name to a desired value.
+	type MaxLength = ConstU32<32>;
+}
+
 // Create the runtime by composing the FRAME pallets that were previously configured.
 construct_runtime!(
 	pub struct Runtime
@@ -298,6 +308,7 @@ construct_runtime!(
 		Sudo: pallet_sudo,
 		// Include the custom logic from the pallet-template in the runtime.
 		TemplateModule: pallet_template,
+		NickPallet: pallet_nicks,
 	}
 );
 
