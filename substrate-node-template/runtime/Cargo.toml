@@ -51,6 +51,7 @@ frame-system-benchmarking = { version = "4.0.0-dev", default-features = false, g
 pallet-loosely-coupling = { version = "4.0.0-dev", default-features = false, path = "../pallets/loosely-coupling" }
 pallet-nicks = { version = "4.0.0-dev", default-features = false, path = "../pallets/nicks" }
 pallet-template = { version = "4.0.0-dev", default-features = false, path = "../pallets/template" }
+pallet-tightly-coupling = { version = "4.0.0-dev", default-features = false, path = "../pallets/tightly-coupling" }
 
 [build-dependencies]
 substrate-wasm-builder = { version = "5.0.0-dev", git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.35" }
@@ -76,6 +77,7 @@ std = [
 	"pallet-template/std",
 	"pallet-nicks/std",
 	"pallet-timestamp/std",
+	"pallet-tightly-coupling/std",
 	"pallet-transaction-payment-rpc-runtime-api/std",
 	"pallet-transaction-payment/std",
 	"sp-api/std",

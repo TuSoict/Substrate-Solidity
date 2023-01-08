@@ -68,6 +68,7 @@ pub mod pallet {
 			let _ = ensure_signed(origin)?;
 
 			let res = T::IncreaseValue::increase_value(something);
+			// let res = T::IncreaseValue::update_value(something);
 			// Emit an event.
 			Self::deposit_event(Event::IncreaseValue(res));
 			// Return a successful DispatchResultWithPostInfo
