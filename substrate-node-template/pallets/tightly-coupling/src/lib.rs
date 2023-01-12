@@ -125,11 +125,10 @@ pub mod pallet {
 			// https://docs.substrate.io/main-docs/build/origins/
 			let who = ensure_signed(origin)?;
 
-			// let bounded_name: BoundedVec<_, _> =
-			// 	name.clone().try_into().map_err(|_| Error::<T>::TooLong)?;
-			// // Update storage.
-			// NameStorage::<T>::insert(&who, bounded_name);
-			Self::set_name(name)?;
+			let bounded_name: BoundedVec<_, _> =
+				name.clone().try_into().map_err(|_| Error::<T>::TooLong)?;
+			// Update storage.
+			NameStorage::<T>::insert(&who, bounded_name);
 
 			// Emit an event.
 			Self::deposit_event(Event::SetName(who, name));
@@ -144,13 +143,6 @@ impl<T: Config> Pallet<T> {
 	pub fn update_storage(new_value: u32) -> DispatchResult {
 		Something::<T>::put(new_value);
 		Ok(())
-	}
-
-	pub fn set_name(new_name: Vec<u8>) -> DispatchResult {
-		let bounded_name: BoundedVec<_, _> =
-			name.clone().try_into().map_err(|_| Error::<T>::TooLong)?;
-		// Update storage.
-		NameStorage::<T>::insert(&who, bounded_name);
 	}
 }
 
