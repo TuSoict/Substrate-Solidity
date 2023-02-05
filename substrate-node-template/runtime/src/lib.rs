@@ -40,6 +40,7 @@ pub use frame_support::{
 	StorageValue,
 };
 pub use frame_system::Call as SystemCall;
+use frame_system::EnsureRoot;
 pub use pallet_balances::Call as BalancesCall;
 pub use pallet_timestamp::Call as TimestampCall;
 use pallet_transaction_payment::{ConstFeeMultiplier, CurrencyAdapter, Multiplier};
@@ -275,6 +276,22 @@ impl pallet_sudo::Config for Runtime {
 	type RuntimeCall = RuntimeCall;
 }
 
+parameter_types! {
+ 	pub const MaxWellKnownNodes: u32 = 8;
+ 	pub const MaxPeerIdLength: u32 = 128;
+}
+
+impl pallet_node_authorization::Config for Runtime {
+	type RuntimeEvent = RuntimeEvent;
+	type MaxWellKnownNodes = MaxWellKnownNodes;
+	type MaxPeerIdLength = MaxPeerIdLength;
+	type AddOrigin = EnsureRoot<AccountId>;
+	type RemoveOrigin = EnsureRoot<AccountId>;
+	type SwapOrigin = EnsureRoot<AccountId>;
+	type ResetOrigin = EnsureRoot<AccountId>;
+	type WeightInfo = ();
+   }
+
 /// Configure the pallet-template in pallets/template.
 impl pallet_template::Config for Runtime {
 	type RuntimeEvent = RuntimeEvent;
@@ -294,7 +311,7 @@ impl pallet_nicks::Config for Runtime {
 impl pallet_loosely_coupling::Config for Runtime {
 	// The ubiquitous event type.
 	type RuntimeEvent = RuntimeEvent;
-	
+
 	type IncreaseValue = TemplateModule;
 }
 
@@ -302,7 +319,7 @@ impl pallet_loosely_coupling::Config for Runtime {
 impl pallet_tightly_coupling::Config for Runtime {
 	// The ubiquitous event type.
 	type RuntimeEvent = RuntimeEvent;
-	
+
 	type MaxLength = ConstU32<50>;
 }
 
@@ -322,6 +339,7 @@ construct_runtime!(
 		Balances: pallet_balances,
 		TransactionPayment: pallet_transaction_payment,
 		Sudo: pallet_sudo,
+		NodeAuthorization: pallet_node_authorization::{Pallet, Call, Storage, Event<T>, Config<T>},
 		// Include the custom logic from the pallet-template in the runtime.
 		TemplateModule: pallet_template,
 		NickPallet: pallet_nicks,
