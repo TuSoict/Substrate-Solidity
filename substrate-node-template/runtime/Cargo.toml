@@ -41,6 +41,8 @@ sp-version = { version = "5.0.0", default-features = false, git = "https://githu
 
 # Add pallet authorization
 pallet-node-authorization = { default-features = false, version = "4.0.0-dev", git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.35" }
+# Add pallet scheduler
+pallet-scheduler = { version = "4.0.0-dev", default-features = false, git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.35" }
 
 # Used for the node template's RPCs
 frame-system-rpc-runtime-api = { version = "4.0.0-dev", default-features = false, git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.35" }
@@ -77,6 +79,7 @@ std = [
 	"pallet-balances/std",
 	"pallet-grandpa/std",
 	"pallet-randomness-collective-flip/std",
+	"pallet-scheduler/std",
 	"pallet-sudo/std",
 	"pallet-template/std",
 	"pallet-nicks/std",
