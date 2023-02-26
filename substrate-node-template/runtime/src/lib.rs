@@ -283,16 +283,16 @@ parameter_types! {
 	pub const MaxPeerIdLength: u32 = 128;
 }
 
-impl pallet_node_authorization::Config for Runtime {
-	type RuntimeEvent = RuntimeEvent;
-	type MaxWellKnownNodes = MaxWellKnownNodes;
-	type MaxPeerIdLength = MaxPeerIdLength;
-	type AddOrigin = EnsureRoot<AccountId>;
-	type RemoveOrigin = EnsureRoot<AccountId>;
-	type SwapOrigin = EnsureRoot<AccountId>;
-	type ResetOrigin = EnsureRoot<AccountId>;
-	type WeightInfo = ();
-}
+// impl pallet_node_authorization::Config for Runtime {
+// 	type RuntimeEvent = RuntimeEvent;
+// 	type MaxWellKnownNodes = MaxWellKnownNodes;
+// 	type MaxPeerIdLength = MaxPeerIdLength;
+// 	type AddOrigin = EnsureRoot<AccountId>;
+// 	type RemoveOrigin = EnsureRoot<AccountId>;
+// 	type SwapOrigin = EnsureRoot<AccountId>;
+// 	type ResetOrigin = EnsureRoot<AccountId>;
+// 	type WeightInfo = ();
+// }
 
 parameter_types! {
 	  pub MaximumSchedulerWeight: Weight = Perbill::from_percent(10) * BlockWeights::get().max_block;
@@ -359,7 +359,7 @@ construct_runtime!(
 		Balances: pallet_balances,
 		TransactionPayment: pallet_transaction_payment,
 		Sudo: pallet_sudo,
-		NodeAuthorization: pallet_node_authorization::{Pallet, Call, Storage, Event<T>, Config<T>},
+		// NodeAuthorization: pallet_node_authorization::{Pallet, Call, Storage, Event<T>, Config<T>},
 		Scheduler: pallet_scheduler,
 		// Include the custom logic from the pallet-template in the runtime.
 		TemplateModule: pallet_template,

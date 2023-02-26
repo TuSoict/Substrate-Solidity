@@ -75,7 +75,6 @@ std = [
 	"frame-system/std",
 	"frame-try-runtime/std",
 	"pallet-aura/std",
-	"pallet-node-authorization/std",
 	"pallet-balances/std",
 	"pallet-grandpa/std",
 	"pallet-randomness-collective-flip/std",
