@@ -19,7 +19,7 @@ mod migration;
 #[frame_support::pallet]
 pub mod pallet {
 	use super::*;
-	use frame_support::pallet_prelude::*;
+	use frame_support::{pallet_prelude::*, sp_tracing::info};
 	use frame_system::pallet_prelude::*;
 
 	/// The current storage version, we set to 2 our new version.
@@ -32,6 +32,7 @@ pub mod pallet {
 	#[pallet::hooks]
 	impl<T: Config> Hooks<BlockNumberFor<T>> for Pallet<T> {
 		fn on_runtime_upgrade() -> frame_support::weights::Weight {
+			info!("Hooks: on_runtime_upgrade");
 			migration::migrate_to_v2::<T>()
 		}
 	}

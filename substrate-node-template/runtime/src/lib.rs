@@ -49,6 +49,7 @@ use pallet_transaction_payment::{ConstFeeMultiplier, CurrencyAdapter, Multiplier
 #[cfg(any(feature = "std", test))]
 pub use sp_runtime::BuildStorage;
 pub use sp_runtime::{Perbill, Permill};
+use log::info;
 
 /// Import the template pallet.
 pub use pallet_template;
@@ -108,7 +109,7 @@ pub const VERSION: RuntimeVersion = RuntimeVersion {
 	//   `spec_version`, and `authoring_version` are the same between Wasm and native.
 	// This value is set to 100 to notify Polkadot-JS App (https://polkadot.js.org/apps) to use
 	//   the compatible custom types.
-	spec_version: 103,
+	spec_version: 104,
 	impl_version: 1,
 	apis: RUNTIME_API_VERSIONS,
 	transaction_version: 1,
@@ -322,7 +323,7 @@ impl pallet_nicks::Config for Runtime {
 	// The ubiquitous event type.
 	type RuntimeEvent = RuntimeEvent;
 	// Set MinLength of nick name to a desired value.
-	type MinLength = ConstU32<8>;
+	type MinLength = ConstU32<2>;
 	// Set MaxLength of nick name to a desired value.
 	type MaxLength = ConstU32<32>;
 }

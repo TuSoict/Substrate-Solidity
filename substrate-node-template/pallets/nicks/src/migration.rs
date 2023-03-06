@@ -33,7 +33,7 @@ pub fn migrate_to_v2<T: Config>() -> Weight {
 		);
 
 		// We transform the storage values from the old into the new format.
-		GetName::<T>::translate::<(Vec<u8>), _>(|k: T::AccountId, (nick): (Vec<u8>)| {
+		GetName::<T>::translate::<Vec<u8>, _>(|k: T::AccountId, nick: Vec<u8>| {
 			info!(target: LOG_TARGET, "     Migrated nickname for {:?}...", k);
 
 			// We split the nick at ' ' (<space>).
