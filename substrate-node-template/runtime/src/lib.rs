@@ -43,16 +43,19 @@ pub use frame_support::{
 };
 pub use frame_system::Call as SystemCall;
 use frame_system::EnsureRoot;
+use log::info;
 pub use pallet_balances::Call as BalancesCall;
 pub use pallet_timestamp::Call as TimestampCall;
 use pallet_transaction_payment::{ConstFeeMultiplier, CurrencyAdapter, Multiplier};
 #[cfg(any(feature = "std", test))]
 pub use sp_runtime::BuildStorage;
 pub use sp_runtime::{Perbill, Permill};
-use log::info;
 
 /// Import the template pallet.
 pub use pallet_template;
+
+/// Import the Collectibles pallet.
+pub use collectibles;
 
 /// An index to a block.
 pub type BlockNumber = u32;
@@ -318,6 +321,13 @@ impl pallet_template::Config for Runtime {
 	type RuntimeEvent = RuntimeEvent;
 }
 
+impl collectibles::Config for Runtime {
+	type RuntimeEvent = RuntimeEvent;
+	type Currency = Balances;
+	type CollectionRandomness = RandomnessCollectiveFlip;
+	type MaximumOwned = frame_support::pallet_prelude::ConstU32<100>;
+}
+
 /// Configure the pallet-nicks in pallets/nicks.
 impl pallet_nicks::Config for Runtime {
 	// The ubiquitous event type.
@@ -367,6 +377,7 @@ construct_runtime!(
 		NickPallet: pallet_nicks,
 		LooselyCouplingPallet: pallet_loosely_coupling,
 		TightlyCouplingPallet: pallet_tightly_coupling,
+		Collectibles: collectibles,
 	}
 );
 
