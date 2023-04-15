@@ -49,7 +49,8 @@ pub use sp_runtime::{Perbill, Permill};
 
 /// Import the template pallet.
 pub use pallet_template;
-
+/// Import the Collectibles pallet.
+pub use collectibles;
 /// An index to a block.
 pub type BlockNumber = u32;
 
@@ -281,6 +282,12 @@ impl pallet_template::Config for Runtime {
 	type RuntimeEvent = RuntimeEvent;
 }
 
+impl collectibles::Config for Runtime {
+	type RuntimeEvent = RuntimeEvent;
+	type Currency = Balances;
+	type CollectionRandomness = RandomnessCollectiveFlip;
+	type MaximumOwned = frame_support::pallet_prelude::ConstU32<100>;
+}
 // Create the runtime by composing the FRAME pallets that were previously configured.
 construct_runtime!(
 	pub struct Runtime
@@ -299,6 +306,7 @@ construct_runtime!(
 		Sudo: pallet_sudo,
 		// Include the custom logic from the pallet-template in the runtime.
 		TemplateModule: pallet_template,
+		Collectibles: collectibles,
 	}
 );
 
