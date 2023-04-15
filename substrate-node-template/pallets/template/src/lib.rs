@@ -1,11 +1,10 @@
 #![cfg_attr(not(feature = "std"), no_std)]
 
-use frame_support::pallet_prelude::*;
-use frame_system::pallet_prelude::*;
 /// Edit this file to define custom logic or remove it if it is not needed.
 /// Learn more about FRAME and the core library of Substrate FRAME pallets:
 /// <https://docs.substrate.io/reference/frame-pallets/>
 pub use pallet::*;
+
 #[cfg(test)]
 mod mock;
 
@@ -17,7 +16,8 @@ mod benchmarking;
 
 #[frame_support::pallet]
 pub mod pallet {
-	use super::*;
+	use frame_support::pallet_prelude::*;
+	use frame_system::pallet_prelude::*;
 
 	#[pallet::pallet]
 	#[pallet::generate_store(pub(super) trait Store)]
@@ -101,27 +101,4 @@ pub mod pallet {
 			}
 		}
 	}
-}
-
-// helper function
-impl<T: Config> Pallet<T> {
-	pub fn update_storage(new_value: u32) -> DispatchResult {
-		Something::<T>::put(new_value);
-		Ok(())
-	}
-}
-
-pub trait DoSome {
-	fn increase_value(value: u32) -> u32;
-	// fn update_value(value: u32);
-}
-
-impl<T> DoSome for Pallet<T> {
-	fn increase_value(value: u32) -> u32 {
-		value + 5
-	}
-
-	// fn update_value(self, value: u32) {
-		
-	// }
 }
