@@ -1,0 +1,46 @@
+@startuml
+
+participant Main
+participant Requests
+participant Limiter
+participant BurstyLimiter
+participant BurstyRequests
+participant fmt
+
+Main -> Requests: Tạo kênh yêu cầu
+activate Requests
+Main -> Limiter: Tạo limiter
+activate Limiter
+
+Main -> Requests: Gửi yêu cầu
+activate Main
+Requests -> Limiter: Gửi yêu cầu
+activate Limiter
+Limiter -> Main: Phản hồi
+deactivate Limiter
+
+Main -> BurstyLimiter: Tạo bursty limiter
+activate BurstyLimiter
+
+Main -> BurstyLimiter: Gửi yêu cầu ban đầu
+activate Main
+BurstyLimiter -> Main: Phản hồi ban đầu
+deactivate Main
+
+BurstyLimiter -> BurstyLimiter: Gửi yêu cầu bursty
+activate BurstyLimiter
+BurstyLimiter -> BurstyLimiter: Xử lý yêu cầu bursty
+deactivate BurstyLimiter
+
+BurstyLimiter -> BurstyRequests: Gửi yêu cầu bursty
+activate BurstyRequests
+BurstyRequests -> BurstyLimiter: Gửi yêu cầu bursty
+activate BurstyLimiter
+BurstyLimiter -> fmt: In yêu cầu bursty
+activate fmt
+fmt --> BurstyLimiter: Phản hồi in yêu cầu bursty
+deactivate fmt
+BurstyLimiter -> BurstyRequests: Phản hồi bursty
+deactivate BurstyLimiter
+
+@enduml

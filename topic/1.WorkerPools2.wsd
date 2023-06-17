@@ -1,0 +1,26 @@
+@startuml
+
+participant Client
+participant Pool
+participant Worker1
+participant Worker2
+participant Worker3
+
+Client -> Pool: Submit(Job)
+activate Pool
+Pool -> Worker1: Assign(Job)
+activate Worker1
+Worker1 --> Pool: Complete(Job)
+deactivate Worker1
+Pool -> Worker2: Assign(Job)
+activate Worker2
+Worker2 --> Pool: Complete(Job)
+deactivate Worker2
+Pool -> Worker3: Assign(Job)
+activate Worker3
+Worker3 --> Pool: Complete(Job)
+deactivate Worker3
+Pool --> Client: JobResult
+deactivate Pool
+
+@enduml

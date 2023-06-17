@@ -1,0 +1,20 @@
+@startuml
+actor User
+participant main
+participant wg
+participant goroutine1
+participant goroutine2
+participant ops
+
+User -> main: Khởi chạy chương trình
+main -> wg: Khởi tạo WaitGroup
+main -> goroutine1: Khởi tạo goroutine1
+main -> goroutine2: Khởi tạo goroutine2
+goroutine1 -> ops: Tăng giá trị ops
+goroutine2 -> ops: Tăng giá trị ops
+main -> wg: Thêm 1 công việc vào WaitGroup
+main -> wg: Thêm 1 công việc vào WaitGroup
+main -> wg: Chờ tất cả goroutine hoàn thành
+wg -> main: Kết thúc chờ
+main -> ops: In giá trị ops
+@enduml

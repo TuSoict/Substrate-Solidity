@@ -1,0 +1,23 @@
+@startuml
+
+participant Khách_hàng
+participant Rate_Limiter
+participant Dịch_vụ
+
+Khách_hàng -> Rate_Limiter: Gửi yêu cầu
+activate Rate_Limiter
+
+alt Tốc_độ_yêu_cầu_thấp
+    Rate_Limiter -> Dịch_vụ: Chuyển tiếp yêu cầu
+    activate Dịch_vụ
+    Dịch_vụ --> Rate_Limiter: Phản_hồi
+    deactivate Dịch_vụ
+    Rate_Limiter --> Khách_hàng: Phản_hồi
+else Tốc_độ_yêu_cầu_cao
+    Rate_Limiter -> Rate_Limiter: Giới_hạn_tốc_độ
+    Rate_Limiter --> Khách_hàng: Phản_hồi_lỗi
+end
+
+deactivate Rate_Limiter
+
+@enduml

@@ -1,0 +1,50 @@
+@startuml
+
+participant MainApp
+participant WaitGroup
+participant Goroutine1
+participant Goroutine2
+participant Goroutine3
+
+MainApp -> WaitGroup: Add()
+activate WaitGroup
+par 
+WaitGroup -> Goroutine1: Goroutine()
+activate Goroutine1
+Goroutine1 --> WaitGroup: Done()
+deactivate Goroutine1
+ end
+par
+WaitGroup -> Goroutine2: Goroutine()
+activate Goroutine2
+Goroutine2 --> WaitGroup: Done()
+deactivate Goroutine2
+ end
+par
+WaitGroup -> Goroutine3: Goroutine()
+activate Goroutine3
+Goroutine3 --> WaitGroup: Done()
+deactivate Goroutine3
+end
+MainApp -> WaitGroup: Wait()
+activate WaitGroup
+MainApp --> MainApp: Continue execution
+deactivate WaitGroup
+
+' par 
+'     activate Goroutine1
+'     Goroutine1 --> MainApp: Result1
+'     deactivate Goroutine1
+' end
+' par
+'     activate Goroutine2
+'     Goroutine2 --> MainApp: Result2
+'     deactivate Goroutine2
+' end
+' par
+'     activate Goroutine3
+'     Goroutine3 --> MainApp: Result3
+'     deactivate Goroutine3
+' end
+
+@enduml
